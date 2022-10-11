@@ -21,6 +21,7 @@ class ConfirmDeleteActivity : AppCompatActivity() {
 
 
 
+
         confirmDeletion.setOnClickListener {
 //            val FoodNameEditText = findViewById<EditText>(R.id.foodNameEditText).text.toString()
 //            val caloriesNumberEditText = findViewById<EditText>(R.id.caloriesEditText).text.toString()
