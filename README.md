@@ -27,7 +27,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-![BitFitPart1PlusWalkthru](https://github.com/yunsanch/BitFit_Part_1/blob/master/bitfitP1Pluswalkthru.gif)
+![BitFitPart1PlusWalkthru](https://github.com/yunsanch/BitFit_Part_1_Plus/blob/master/bitfitP1Pluswalkthru.gif)
 
 <img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
