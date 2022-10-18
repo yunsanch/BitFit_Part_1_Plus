@@ -5,17 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
+    android:orientation="horizontal"
     tools:context=".ConfirmDeleteActivity">
 
     <TextView
         android:id="@+id/sureTextView"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-black"
         android:padding="20dp"
         android:text="ARE YOU SURE YOU WANT TO DELETE EVERYTHING?"
-        android:textSize="30dp"
         android:textColor="@color/white"
+        android:textSize="30dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/YesclicktoDeletebtn"
         app:layout_constraintEnd_toEndOf="parent"
@@ -26,21 +27,33 @@
         android:id="@+id/YesclicktoDeletebtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="YES"
         android:backgroundTint="@color/green"
+        android:gravity="center"
+        android:text="YES"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginLeft="55dp"
-        app:layout_constraintStart_toStartOf="parent"/>
+        app:layout_constraintEnd_toStartOf="@+id/doNotDeleteBtn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <Button
         android:id="@+id/doNotDeleteBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="NO"
         android:backgroundTint="@color/red"
-        app:layout_constraintTop_toTopOf="@+id/YesclicktoDeletebtn"
+        android:text="NO"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/YesclicktoDeletebtn"
-       />
+        app:layout_constraintTop_toTopOf="@+id/YesclicktoDeletebtn" />
+
+<!--    <Button-->
+<!--        android:id="@+id/deleteonebtn"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="this is gone"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/YesclicktoDeletebtn"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"/>-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

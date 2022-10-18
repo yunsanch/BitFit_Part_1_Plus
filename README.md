@@ -1,39 +1,34 @@
-# Android Project 5 - *BitFitP1*
+# Android Project 6 - *BitFit Part 1 Plus*
 
 Submitted by: **Yunior Sanchez**
 
-**BitFitP1** is a health metrics app that allows users to track food calories consume 
+**BitFit Part 1 Plus** is a health metrics app that allows users to track calories consumed
 
-Time spent: **6** hours spent in total
+Time spent: **24** hours spent in total
 
 ## Required Features
 
 The following **required** functionality is completed:
 
-- [x] **At least one health metric is tracked (based on user input)**
-  - Chosen metric(s): `Food and its calories`
-- [x] **There is a "create entry" UI that prompts users to make their daily entry**
-- [x] **New entries are saved in a database and then updated in the RecyclerView**
-- [x] **On application restart, previously entered entries are preserved (i.e., are *persistent*)**
- 
+- [x] **Use at least 2 Fragments**
+- [x] **Create a new dashboard fragment where users can see a summary of their entered data**
+- [x] **Use one of the Navigation UI Views (BottomNavigation, Drawer Layout, Top Bar) to move between the fragments**
+
 The following **optional** features are implemented:
 
-- [ ] **Create a UI for tracking averages and trends in metrics**
-- [x] **Improve and customize the user interface through styling and coloring**
-- [ ] **Implement orientation responsivity**
-- [ ] **Add a daily photo feature**
+- [ ] **Add a more advanced UI (e.g: Graphing) for tracking trends in metrics**
+- [ ] **Implement daily notifications to prompt users to fill in their data**
 
 The following **additional** features are implemented:
 
-- [x] List anything else that you can get done to improve the app functionality!
-- [x]added a bottun to delete all of the data previously inputted
+- [ ] List anything else that you can get done to improve the app functionality!
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
+![BitFitPart1PlusWalkthru](https://github.com/yunsanch/BitFit_Part_1/blob/master/bitfitP1Pluswalkthru.gif)
 
-![BitFitP1Walkthru](https://github.com/yunsanch/BitFit_Part_1/blob/master/BitFitP1walkthru.gif)
 <img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->

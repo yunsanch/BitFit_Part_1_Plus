@@ -1,4 +1,4 @@
-package com.example.bitfitpart1
+package com.example.bitfitpart1plus
 
 import androidx.room.Dao
 import androidx.room.Delete
@@ -22,6 +22,17 @@ interface FoodDao {
 
     @Delete
     fun delete(food: FoodEntity)
+
+    @Query("SELECT MAX(caloriesNumber) FROM food_table")
+    fun getMax(): Float
+
+    @Query("SELECT AVG(caloriesNumber) FROM food_table")
+    fun getAvg(): Float
+
+    @Query("SELECT MIN(caloriesNumber) FROM food_table")
+    fun getMin(): Float
+
+
 
 //    @Delete
 //    fun deleteAll(food: FoodEntity)

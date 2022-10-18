@@ -1,4 +1,4 @@
-package com.example.bitfitpart1
+package com.example.bitfitpart1plus
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -7,6 +7,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import androidx.lifecycle.lifecycleScope
+import com.example.bitfitpart1plus.R
 import kotlinx.coroutines.Dispatchers.IO
 import kotlinx.coroutines.launch
 

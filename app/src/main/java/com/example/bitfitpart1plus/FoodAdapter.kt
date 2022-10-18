@@ -1,16 +1,14 @@
-package com.example.bitfitpart1
+package com.example.bitfitpart1plus
 
 import android.content.Context
-import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.TableRow
 import android.widget.TextView
-import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
-import androidx.lifecycle.lifecycleScope
-import kotlinx.coroutines.Dispatchers.IO
+import com.example.bitfitpart1plus.R
 
 const val FOOD_EXTRA = "FOOD_EXTRA"
 private const val TAG = "FoodAdapter"
@@ -35,8 +33,10 @@ RecyclerView.Adapter<FoodAdapter.ViewHolder>() {
         private val foodNameTextView = itemView.findViewById<TextView>(R.id.foodNameTextView)
         private val numerofCalories = itemView.findViewById<TextView>(R.id.numberOfCalories)
         private val caloriesStringTextView = itemView.findViewById<TextView>(R.id.calories)
-        val deleteButton = itemView.findViewById<Button>(R.id.deleteBtn)
+        val deleteButton = itemView.findViewById<Button>(R.id.deleteBtnItem)
         val comfirnDeletion = itemView.findViewById<Button>(R.id.confirmDelete)
+//        val row = itemView.findViewById<TableRow>(R.id.foodListRV)
+
 
         init {
             itemView.setOnClickListener(this)
@@ -45,8 +45,28 @@ RecyclerView.Adapter<FoodAdapter.ViewHolder>() {
         override fun onClick(v: View?) {
 
             deleteButton.visibility = View.VISIBLE
-
             val food = foods[absoluteAdapterPosition]
+            deleteButton.setOnClickListener{
+                val position: Int = absoluteAdapterPosition
+                if(position != RecyclerView.NO_POSITION) {
+
+                }
+
+
+            }
+
+//            val position: Int = absoluteAdapterPosition
+//            if(position != RecyclerView.NO_POSITION) {
+//
+//                listerner.onItemClick(position)
+//            }
+//            deleteButton.setOnClickListener{
+//                val intent2 = Intent(context, ConfirmDeleteActivity::class.java)
+////            intent.putExtra(FOOD_EXTRA,food)
+//                context.startActivity(intent2)
+//            }
+
+//            val food = foods[absoluteAdapterPosition]
 //
 ////            addButton.setOnClickListener{
 ////                val intent = Intent(context,DetailsActivity::class.java)
@@ -67,4 +87,7 @@ RecyclerView.Adapter<FoodAdapter.ViewHolder>() {
 //            caloriesStringTextView.text = food.caloriesString
         }
     }
+//    interface onItemClickListener{
+//        fun onItemClick(position: Int)
+//    }
 }

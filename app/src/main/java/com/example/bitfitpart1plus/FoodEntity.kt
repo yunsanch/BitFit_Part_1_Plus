@@ -1,4 +1,4 @@
-package com.example.bitfitpart1
+package com.example.bitfitpart1plus
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
@@ -10,6 +10,7 @@ data class FoodEntity(
     @ColumnInfo(name = "foodName") val foodName: String?,
     @ColumnInfo(name = "caloriesNumber") val caloriesNumber: String?,
     @ColumnInfo(name = "caloriesText") val caloriesText: String?,
+//    @ColumnInfo(name = "avgCalories") val avgCalories: String?,
 //    @ColumnInfo(name = "mediaImageUrl") val mediaImageUrl: String?,
 //    @ColumnInfo(name = "main") val main: String?,
 //    @ColumnInfo(name = "original") val original: String?,
